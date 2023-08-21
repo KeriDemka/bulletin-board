@@ -14,38 +14,38 @@
     <header class="header">
         <section class="topline">
             <div class="topline-inner">
-                <div class="button button--without-color">
+                <a class="button button--without-color" href="#" >
                     <svg xmlns="http://www.w3.org/2000/svg">
                         <use href="./images/sprites.svg#person" xlink:href="./images/sprites.svg#person"></use>
                     </svg>
                     Войти
-                </div>
-              <div class="button button--primary">
-                Разместить объявление
-                <svg xmlns="http://www.w3.org/2000/svg">
-                    <use href="./images/sprites.svg#plus" xlink:href="./images/sprites.svg#plus"></use>
-                </svg>
-              </div>
+                </a>
+                <a class="button button--primary" href="#">
+                    Разместить объявление
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                        <use href="./images/sprites.svg#plus" xlink:href="./images/sprites.svg#plus"></use>
+                    </svg>
+                </a>
             </div>
         </section>
         <section class="search">
             <div class="search-inner">
                 <h1>Доска объявлений</h1>
-                <div class="button button--primary button-outline-primary">
+                <button type="button" class="button button--primary button-outline-primary">
                     <svg xmlns="http://www.w3.org/2000/svg">
                         <use href="./images/sprites.svg#list-nested" xlink:href="./images/sprites.svg#list-nested"></use>
                     </svg>
                     <span>Все категории</span>
-                </div>
-                <div class="search-form">
-                    <input id="search" class="search-form__input" type="text" placeholder="Поиск по объявлениям">
-                    <div class="button button--primary">
+                </button>
+                <form action="/main.html" class="search-form">
+                    <input id="search" name="search" class="search-form__input" type="text" placeholder="Поиск по объявлениям">
+                    <button type="submit" class="button button--primary">
                         <span>Найти</span>
                         <svg xmlns="http://www.w3.org/2000/svg">
                             <use href="./images/sprites.svg#search" xlink:href="./images/sprites.svg#search"></use>
                         </svg>
-                    </div>
-                </div>
+                    </button>
+                </form>
             </div>
         </section>
     </header>
