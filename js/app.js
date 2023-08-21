@@ -12,8 +12,6 @@
             return response.json();
         })
         .then(function (data) { // Работа с преобразованными данными
-            console.log(data);
-
             document.querySelectorAll('.card').forEach(function ($card) {
                 $card.remove();
             });
@@ -37,9 +35,5 @@
         $cardItem.querySelector('.card-img').setAttribute("alt", item.imagesAlt);
 
         $cardsContainer.appendChild($cardItem);
-
-        console.log(item, $cardItem);
     }
-
-    console.log('dsfdsf');
 })();
