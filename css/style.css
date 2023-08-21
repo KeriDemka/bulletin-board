@@ -77,27 +77,8 @@ body {
     padding-left: 16px;
 }
 
-@media (min-width: 576px) {
-    .topline-inner {
-        justify-content: flex-end;
-    }
-}
-
-@media (min-width: 1300px) {
-    .topline-inner {
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
 .topline-inner .button--without-color {
     padding-left: 0;
-}
-
-@media (min-width: 576px) {
-    .topline-inner .button--without-color {
-        padding-left: 12px;
-    }
 }
 
 /**
@@ -122,13 +103,6 @@ body {
     padding-left: 16px;
 }
 
-@media (min-width: 1300px) {
-    .search-inner {
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
 .search-inner h1 {
     display: none;
     font-size: 30px;
@@ -137,20 +111,8 @@ body {
     margin: 0 12px 0 auto;
 }
 
-@media (min-width: 992px) {
-    .search-inner h1 {
-        display: block;
-    }
-}
-
 .search-inner .button span {
     display: none;
-}
-
-@media (min-width: 576px) {
-    .search-inner .button span {
-        display: block;
-    }
 }
 
 /**
@@ -168,12 +130,6 @@ body {
 
 .search-form .button span {
     display: none;
-}
-
-@media (min-width: 370px) {
-    .search-form .button span {
-        display: block;
-    }
 }
 
 .search-form .button svg {
@@ -201,13 +157,6 @@ body {
     margin-left: auto;
 }
 
-@media (min-width: 1300px) {
-    .catalog {
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
 .catalog-title {
     font-size: 24px;
     font-weight: 600;
@@ -230,19 +179,6 @@ body {
     margin-bottom: 0;
 }
 
-@media (min-width: 576px) {
-    .cards {
-        grid-template-columns: repeat(3, calc(33.33% - 7px));
-    }
-}
-
-@media (min-width: 990px) {
-    .cards {
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 24px;
-    }
-}
-
 /**
  * Card
  */
@@ -254,25 +190,12 @@ body {
     cursor: pointer;
 }
 
-@media (min-width: 1300px) {
-    .card {
-        width: 306px;
-    }
-}
-
 .card-img-wrapper {
     width: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 4px;
     padding-top: 100%;
-}
-
-@media (min-width: 1300px) {
-    .card-img-wrapper {
-        height: 240px;
-        padding-top: 0;
-    }
 }
 
 .card-img-wrapper img {
@@ -308,15 +231,6 @@ body {
     flex: 1;
 }
 
-@media (min-width: 990px) {
-
-    .card-name,
-    .card-price {
-        font-size: 18px;
-        line-height: 24px;
-    }
-}
-
 .card-name {
     color: #3B82F6;
 }
@@ -331,15 +245,4 @@ body {
     font-weight: 400;
     line-height: 18px;
     color: #64748B;
-}
-
-@media (min-width: 576px) {
-
-    .card-address,
-    .card-published {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        color: #64748B;
-    }
 }

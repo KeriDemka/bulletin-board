@@ -1,0 +1,118 @@
+/**
+ * Topline
+ */
+
+@media (min-width: 576px) {
+    .topline-inner {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1300px) {
+    .topline-inner {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .topline-inner .button--without-color {
+        padding-left: 12px;
+    }
+}
+
+/**
+ * Search
+ */
+
+@media (min-width: 1300px) {
+    .search-inner {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .search-inner h1 {
+        display: block;
+    }
+}
+
+@media (min-width: 576px) {
+    .search-inner .button span {
+        display: block;
+    }
+}
+
+/**
+ * Search-form
+ */
+
+@media (min-width: 370px) {
+    .search-form .button span {
+        display: block;
+    }
+}
+
+/**
+ * Catalog
+ */
+
+@media (min-width: 1300px) {
+    .catalog {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/**
+ * Cards
+ */
+
+@media (min-width: 576px) {
+    .cards {
+        grid-template-columns: repeat(3, calc(33.33% - 7px));
+    }
+}
+
+@media (min-width: 990px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 24px;
+    }
+}
+
+/**
+ * Card
+ */
+
+@media (min-width: 1300px) {
+    .card {
+        width: 306px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .card-img-wrapper {
+        height: 240px;
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 990px) {
+    .card-name,
+    .card-price {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 576px) {
+    .card-address,
+    .card-published {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #64748B;
+    }
+}
