@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Доска объявлений</title>
+</head>
+<body>
+    <header class="header">
+        <section class="topline">
+            <div class="topline-inner">
+                <div class="button button--without-color">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                        <use href="./images/sprites.svg#person" xlink:href="./images/sprites.svg#person"></use>
+                    </svg>
+                    Войти
+                </div>
+              <div class="button button--primary">
+                Разместить объявление
+                <svg xmlns="http://www.w3.org/2000/svg">
+                    <use href="./images/sprites.svg#plus" xlink:href="./images/sprites.svg#plus"></use>
+                </svg>
+              </div>
+            </div>
+        </section>
+        <section class="search">
+            <div class="search-inner">
+                <h1>Доска объявлений</h1>
+                <div class="button button--primary button-outline-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                        <use href="./images/sprites.svg#list-nested" xlink:href="./images/sprites.svg#list-nested"></use>
+                    </svg>
+                    <span>Все категории</span>
+                </div>
+                <div class="search-form">
+                    <input id="search" class="search-form__input" type="text" placeholder="Поиск по объявлениям">
+                    <div class="button button--primary">
+                        <span>Найти</span>
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/sprites.svg#search" xlink:href="./images/sprites.svg#search"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="catalog">
+        <h2 class="catalog-title">Рекомендации для вас</h2>
+        <div class="cards">
+            <!-- Карточка товара -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="./images/guitar.jpg" alt="Гитара">
+                </div>
+                <div class="card-body">
+                    <div class="card-name"></div>
+                    <div class="card-price"></div>
+                    <div class="card-address"></div>
+                    <div class="card-published">Сегодня 14:12</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
