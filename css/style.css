@@ -94,7 +94,7 @@ body {
 
 @media (min-width: 576px) {
     .topline-inner .button--without-color {
-        padding-left: 12;
+        padding-left: 12px;
     }
 }
 
@@ -143,12 +143,12 @@ body {
 }
 
 .search-inner .button span {
-    display:  none;
+    display: none;
 }
 
 @media (min-width: 576px) {
     .search-inner .button span {
-        display:  block;
+        display: block;
     }
 }
 
