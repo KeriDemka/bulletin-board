@@ -1,3 +1,12 @@
+:root {
+    --light-text-default-text: #1E293B;
+    --light-text-inverse-text: #ffffff;
+    --light-text-primary-text: #3B82F6;
+    --light-text-secondary-text: #64748B;
+    --light-surfaces-border: #E2E8F0;
+    --light-forms-border: #CBD5E1;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -13,7 +22,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--light-text-inverse-text);
     padding: 6px 12px;
     border-radius: 4px;
     border: none;
@@ -26,13 +35,13 @@ body {
 
 .button--primary {
     font-weight: 500;
-    background-color: #3B82F6;
+    background-color: var(--light-text-primary-text);
 }
 
 .button-outline-primary {
-    color: #3B82F6;
+    color: var(--light-text-primary-text);
     background-color: transparent;
-    border: 1px solid #3B82F6;
+    border: 1px solid var(--light-text-primary-text);
 }
 
 .button svg {
@@ -48,7 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-bottom: 1px solid var(--light-surfaces-border, #E2E8F0);
+    border-bottom: 1px solid var(--light-surfaces-border);
 }
 
 /**
@@ -61,7 +70,7 @@ body {
     width: 100%;
     height: 52px;
     font-size: 14px;
-    background-color: #1E293B;
+    background-color: var(--light-text-default-text);
 }
 
 .topline-inner {
@@ -107,7 +116,7 @@ body {
     display: none;
     font-size: 30px;
     font-weight: 700;
-    color: #1E293B;
+    color: var(--light-text-default-text);
     margin: 0 12px 0 auto;
 }
 
@@ -141,7 +150,7 @@ body {
     flex-grow: 1;
     font-size: 14px;
     font-weight: 400;
-    border: 1px solid #CBD5E1;
+    border: 1px solid var(--light-forms-border);
     border-radius: 4px 0 0 4px;
     padding: 8px 12px;
 }
@@ -160,7 +169,7 @@ body {
 .catalog-title {
     font-size: 24px;
     font-weight: 600;
-    color: #1E293B;
+    color: var(--light-text-default-text);
     margin: 0 auto 24px 0;
 }
 
@@ -232,11 +241,11 @@ body {
 }
 
 .card-name {
-    color: #3B82F6;
+    color: var(--light-text-primary-text);
 }
 
 .card-price {
-    color: #1E293B;
+    color: var(--light-text-default-text);
 }
 
 .card-address,
@@ -244,5 +253,5 @@ body {
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
-    color: #64748B;
+    color: var(--light-text-secondary-text);
 }
