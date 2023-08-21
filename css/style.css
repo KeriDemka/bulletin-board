@@ -149,7 +149,7 @@ body {
 
 @media (min-width: 576px) {
     .search-inner .button span {
-        display:  block;
+        display: block;
     }
 }
 
@@ -219,26 +219,29 @@ body {
  * Cards
  */
 
- .cards {
+.cards {
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 7px));
     flex-wrap: wrap;
     column-gap: 14px;
     row-gap: 32px;
- }
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
- @media (min-width: 576px) {
+@media (min-width: 576px) {
     .cards {
         grid-template-columns: repeat(3, calc(33.33% - 7px));
     }
- }
+}
 
- @media (min-width: 990px) {
+@media (min-width: 990px) {
     .cards {
         grid-template-columns: repeat(4, 1fr);
         column-gap: 24px;
     }
- }
+}
 
 /**
  * Card
@@ -306,6 +309,7 @@ body {
 }
 
 @media (min-width: 990px) {
+
     .card-name,
     .card-price {
         font-size: 18px;
@@ -330,6 +334,7 @@ body {
 }
 
 @media (min-width: 576px) {
+
     .card-address,
     .card-published {
         font-size: 14px;
