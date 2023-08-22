@@ -1,10 +1,11 @@
 :root {
     --light-text-default-text: #1E293B;
+    --light-text-secondary-text: #64748B;
+    --light-forms-border: #CBD5E1;
+    --light-surfaces-border: #E2E8F0;
     --light-text-inverse-text: #ffffff;
     --light-text-primary-text: #3B82F6;
-    --light-text-secondary-text: #64748B;
-    --light-surfaces-border: #E2E8F0;
-    --light-forms-border: #CBD5E1;
+    --light-utility-primary-active: #1D4ED8;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 .button {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
@@ -27,10 +28,11 @@ body {
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-.button--without-color {
-    gap: 8px;
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .button--primary {
@@ -38,11 +40,25 @@ body {
     background-color: var(--light-text-primary-text);
 }
 
+.button--primary:hover {
+    background-color: var(--light-utility-primary-active);
+}
+
 .button-outline-primary {
     color: var(--light-text-primary-text);
     background-color: transparent;
     border: 1px solid var(--light-text-primary-text);
 }
+
+.button-outline-primary:hover {
+    background-color: var(--light-text-primary-text);
+    color: var(--light-text-inverse-text);
+    fill: var(--light-text-inverse-text);
+}
+
+/* .button-outline-primary:hover svg {
+    fill: var(--light-text-inverse-text);
+} */
 
 .button svg {
     height: 20px;
@@ -122,6 +138,16 @@ header {
 
 .search-inner .button span {
     display: none;
+}
+
+.search-inner .button svg {
+    fill: var(--light-text-primary-text);
+    transition: fill 0.25s ease;
+
+}
+
+.search-inner .button:hover svg {
+    fill: var(--light-text-inverse-text);
 }
 
 /**
